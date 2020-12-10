@@ -7,6 +7,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+  
 
 }
 
@@ -14,15 +15,40 @@ function generatePassword(){
 
   // ALL THE LOGIC GOES IN HERE
   // temporary password is a filler2""!
-  lowerCaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  numberArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-  specialCharArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
+  var upperCaseValues = "abcdefghijklmnopqrstuvwxyz";
+  var lowerCaseValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numberValues = "1234567890";
+  var specialValues = "!@#$%^&*()";
+  var passwordGeneratorValue = "";
 
-  var lengthOfPassword = prompt("How long would you like your password to be, choose between 8 and 128");
+  var lengthOfPassword = prompt("Enter a number between 8 and 128");
+  if (lengthOfPassword) {
+
+  }
+
+  var useUpperCase = prompt("Would you like to use upper case letters?");
+  if (useUpperCase) {
+    var res = passwordGeneratorValue.concat(useUpperCase);
+  }
+
+  var useLowerCase = prompt("Would you like to use lower case letters");
+  if (useLowerCase) {
+    var res = passwordGeneratorValue.concat(useLowerCase);
+  }
+
+  var useNumberValues = prompt("Would you like to use numbers?");
+  if (useNumberValues) {
+    var res = passwordGeneratorValue.concat(useNumberValues);
+  }
+
+  var useSpecialValues = prompt("Woule you like to use special characters");
+  if (useSpecialValues) {
+    var res = passwordGeneratorValue.concat(useSpecialValues);
+  }
+
 
   for (var i = 0; i < lengthOfPassword; i++) {
-    
+
   }
 
 
