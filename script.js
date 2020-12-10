@@ -29,27 +29,29 @@ function generatePassword(){
 
   var useUpperCase = confirm("Would you like to use upper case letters?");
   if (useUpperCase) {
-    var res = passwordGeneratorValue.concat(useUpperCase);
+    var passwordGeneratorValue = passwordGeneratorValue.concat(upperCaseValues);
     console.log("uppercase confirmed");
   }
 
   var useLowerCase = confirm("Would you like to use lower case letters");
   if (useLowerCase) {
-    var res = passwordGeneratorValue.concat(useLowerCase);
+    var passwordGeneratorValue = passwordGeneratorValue.concat(lowerCaseValues);
     console.log("lower case confirmed");
   }
 
   var useNumberValues = confirm("Would you like to use numbers?");
   if (useNumberValues) {
-    var res = passwordGeneratorValue.concat(useNumberValues);
+    var passwordGeneratorValue = passwordGeneratorValue.concat(numberValues);
     console.log("numbers confirmed");
   }
 
   var useSpecialValues = confirm("Woule you like to use special characters");
   if (useSpecialValues) {
-    var res = passwordGeneratorValue.concat(useSpecialValues);
+    var passwordGeneratorValue = passwordGeneratorValue.concat(specialValues);
     console.log("special characters confirmed");
   }
+
+  console.log("These values confirmed: " + passwordGeneratorValue);
 
 
   // for (var i = 0; i < lengthOfPassword; i++) {
