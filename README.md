@@ -1,7 +1,7 @@
 # password-generator
 
 ## Description
-The goal of this project was to create a random password generator utilizing JavaScript functions.  The page accepts input from the user regarding desired parameters for their desired password, after which time the program compiles these choices and generates a password for the user. 
+The goal of this project was to create a random password generator utilizing JavaScript functions.  The page accepts input from the user regarding desired parameters for their desired password, after which time the program compiles these choices and generates a password for the user.  Here is the link to the deployed application. [password-generator](https://jacquie24.github.io/password-generator/)
 
 ## Usage
 Once the initial webpage is loaded, the user must click on the button that reads "Generate Password." ![PasswordOpen](/images/password1.png)
