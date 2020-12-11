@@ -38,12 +38,12 @@ function generatePassword(){
 
   
   // ask TA in office hours
-    var lengthOfPassword = prompt("Enter a number between 8 and 128");
+    var lengthOfPassword = prompt("Enter a number between 8 and 128.");
 
     
     // prompt("Enter a number between 8 and 128");
     if (lengthOfPassword < 8 || lengthOfPassword > 128) {
-      alert("Please choose a number between 8 and 128")
+      alert("Please choose a number between 8 and 128.")
      return generatePassword ()
   
     }
@@ -52,13 +52,13 @@ function generatePassword(){
   
   console.log("Password length is " + lengthOfPassword);
 
-  var useUpperCase = confirm("Would you like to use upper case letters?");
+  var useUpperCase = confirm("Would you like to use uppercase letters?");
   if (useUpperCase) {
     var passwordGeneratorValue = passwordGeneratorValue.concat(upperCaseValues);
     console.log("uppercase confirmed");
   }
 
-  var useLowerCase = confirm("Would you like to use lower case letters");
+  var useLowerCase = confirm("Would you like to use lowercase letters?");
   if (useLowerCase) {
     var passwordGeneratorValue = passwordGeneratorValue.concat(lowerCaseValues);
     console.log("lower case confirmed");
@@ -70,14 +70,14 @@ function generatePassword(){
     console.log("numbers confirmed");
   }
 
-  var useSpecialValues = confirm("Woule you like to use special characters");
+  var useSpecialValues = confirm("Would you like to use special characters?");
   if (useSpecialValues) {
     var passwordGeneratorValue = passwordGeneratorValue.concat(specialValues);
     console.log("special characters confirmed");
   }
 
   if (!useUpperCase && !useLowerCase && !useNumberValues && !useSpecialValues) {
-    alert("Please choose at least one");
+    alert("Please choose at least one.");
     generatePassword ()
   }
 
