@@ -54,13 +54,13 @@ function generatePassword() {
 
     // These if statements will take in the variables that will be combined to generate the password.
 
-  var useUpperCase = confirm("Would you like to use upper case letters?");
+  var useUpperCase = confirm("Would you like to use uppercase letters?");
   if (useUpperCase) {
     passwordGeneratorValue = passwordGeneratorValue.concat(upperCaseValues);
     console.log("uppercase confirmed");
   }
 
-  var useLowerCase = confirm("Would you like to use lower case letters");
+  var useLowerCase = confirm("Would you like to use lowercase letters?");
   if (useLowerCase) {
     passwordGeneratorValue = passwordGeneratorValue.concat(lowerCaseValues);
     console.log("lower case confirmed");
@@ -72,7 +72,7 @@ function generatePassword() {
     console.log("numbers confirmed");
   }
 
-  var useSpecialValues = confirm("Woule you like to use special characters");
+  var useSpecialValues = confirm("Would you like to use special characters?");
   if (useSpecialValues) {
     passwordGeneratorValue = passwordGeneratorValue.concat(specialValues);
     console.log("special characters confirmed");
@@ -80,7 +80,7 @@ function generatePassword() {
 
   // If the user chooses none of the variables, then alert is triggered, and they begin again
   if (!useUpperCase && !useLowerCase && !useNumberValues && !useSpecialValues) {
-    alert("Please choose at least one");
+    alert("Please choose at least one.");
     generatePassword()
   }
 
